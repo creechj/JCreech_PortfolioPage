@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-/* set header area to flex in 2 parts: heading and nav
-    the 2 should always appear next to each other
+/* set header area should stretch width of page and flex in 2 parts: heading and nav
+    the 2 should always appear side-by-side
     heading should always appear larger than nav
 */
 header {
@@ -19,8 +19,9 @@ header {
     color: whitesmoke;
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
-    border-bottom-style: outset ;
+    /* border-bottom-style; */
 }
+
 
 header h1 {
     font-size: 2em;
@@ -31,7 +32,6 @@ header h1 {
 
 header nav {
     font-size: 1em;
-    /* flex: 1 20em; */
     align-items: flex-end;
     margin-top: .25em;    
     margin-bottom: .25em;    
@@ -40,20 +40,26 @@ header nav {
 }
 
 header ul {
-    width: 10em;
+    width: 100%;
     list-style: none;
 }
 
 header li {
     width: 100%;
+    padding: .1em;
+    /* border-radius: 15%;
+    border-style: solid;
+    border-color: #28282B;
+    border-width: .2em; */
     /* background-color: whitesmoke; */
-    padding: .5em;
 }
 
 header a {
-    width: calc(100/6);
+    display: block;
+    width: 100%;
     text-decoration: none;
     text-shadow: .05em 0em .1em darkslateblue;
+    text-align: center;
     color: #28282B;
     padding: .2em;
     border-radius: 15%;
