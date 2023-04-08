@@ -47,11 +47,6 @@ header ul {
 header li {
     width: 100%;
     padding: .1em;
-    /* border-radius: 15%;
-    border-style: solid;
-    border-color: #28282B;
-    border-width: .2em; */
-    /* background-color: whitesmoke; */
 }
 
 header a {
@@ -69,9 +64,41 @@ header a {
     background-color: whitesmoke;
 }
 
+#aboutme {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    margin-top: .5em;
+    margin-left: .25em;
+    margin-right: .25em;
+    margin-bottom: .5em;
+    align-items: center;
+}
+
+#aboutme figure {
+    margin-top: .5em;
+    margin-left: .25em;
+    margin-right: .25em;    
+}
+
+#aboutme h2 {
+    margin-left: .25em;
+    margin-right: .25em;
+    top: 0;
+    left: 0;
+}
+
+#aboutme p {
+    /* max-width: 50em; */
+
+}
+
 #profilepic {
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
+    float: left;
+    margin: .5em;
 }
 
 footer {
