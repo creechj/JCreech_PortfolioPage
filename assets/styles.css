@@ -1,0 +1,100 @@
+/* sets common font-family to page and sets general positioning and sizing attributes settings*/
+* {
+    font-family: Verdana, Tahoma, Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set header area to flex in 2 parts: heading and nav
+    the 2 should always appear next to each other
+    heading should always appear larger than nav
+*/
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    min-width: 100%;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-bottom-style: outset ;
+}
+
+header h1 {
+    font-size: 2em;
+    flex: 2 20em;
+    margin-right: 2em;
+    text-shadow: .1em .1em .8em #28282B;
+}
+
+header nav {
+    font-size: 1em;
+    /* flex: 1 20em; */
+    align-items: flex-end;
+    margin-top: .25em;    
+    margin-bottom: .25em;    
+    margin-right: 1em;
+    padding: .2em;
+}
+
+header ul {
+    width: 10em;
+    list-style: none;
+}
+
+header li {
+    width: 100%;
+    /* background-color: whitesmoke; */
+    padding: .5em;
+}
+
+header a {
+    width: calc(100/6);
+    text-decoration: none;
+    text-shadow: .05em 0em .1em darkslateblue;
+    color: #28282B;
+    padding: .2em;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: #28282B;
+    border-width: .2em;
+    background-color: whitesmoke;
+}
+
+#profilepic {
+    height: 10em;
+    width: 10em;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    min-width: 100%;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    align-items: center;
+}
+
+footer h4 {
+    position: relative;
+    font-size: 1.5em;
+    flex: 2 20em;
+    margin-right: 2em;
+    text-shadow: .1em .1em .1em #28282B;
+}
+
+footer a, footer img {
+    width: 5em;
+}
+
+
+/* main colors */
+    /* background-color: #28282B;
+    color: whitesmoke; */
+
+/* header/footer colors */
+/* background-color: darkslateblue;
+color: whitesmoke; */

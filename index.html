@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css">
     <title>Jordan Creech - Full-Stack Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Jordan Creech - Full-Stack Portfolio</h1>
+        <h1>Jordan Creech<br />Full-Stack Portfolio</h1>
         <nav>
-            <h2>Categories</h2>
             <ul>
-                <li class="navitem"><a href="#semantics" class="navlink">Semantics & Compatibility</a></li>
+                <li class="navitem"><a href="#semantics" class="navlink">Semantics</a></li>
                 <li class="navitem"><a href="#css" class="navlink">CSS</a></li>
                 <li class="navitem"><a href="#javascript" class="navlink">Javascript</a></li>
-                <li class="navitem"><a href="#databases" class="navlink">Data Connections & Queries</a></li>
-                <li class="navitem"><a href="#pwa" class="navlink">Progressive Web Apps</a></li>
+                <li class="navitem"><a href="#databases" class="navlink">Databases</a></li>
+                <li class="navitem"><a href="#pwa" class="navlink">PWA</a></li>
+                <li class="navitem"><a href="#contact" class="navlink">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h3>About Me</h2>
-            <p>I am. . .</p>
+            <figure id="profilepicfig">
+                <img id="profilepic" src="/assets/images/LI_PP.jpg" alt="Profile picture of site owner: Jordan Creech">
+            </figure>
+            <p id="profileinfo">I am. . .</p>
         </section>
         <section class="projects">
             <h3>Projects</h2>
-            <figure class="project" id="#semantics">
+            <figure class="project" id="semantics">
                 <img class="projectimage" src="" alt="">
                 <figcaption>
                     <details>
@@ -37,7 +40,7 @@
                     </details>
                 </figcaption>
             </figure>
-            <figure class="project" id="#css">
+            <figure class="project" id="css">
                 <img class="projectimage" src="" alt="">
                 <figcaption>
                     <details>
@@ -46,7 +49,7 @@
                     </details>
                 </figcaption>
             </figure>
-            <figure class="project" id="#javascript">
+            <figure class="project" id="javascript">
                 <img class="projectimage" src="" alt="">
                 <figcaption> 
                     <details>
@@ -76,10 +79,10 @@
         </section>
     </main>
     <footer>
-        <h4 class="footermessage">Contact</h4>
-        <a href="mailto:jmc435@gmail.com?subject=Profile Inquiry">Email</a>
-        <a href="https://github.com/creechj" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/jordan-creech-a59236116/" target="_blank"></a>
+        <h4 class="footermessage" id="contact">Contact</h4>
+        <a id="email" href="mailto:jmc435@gmail.com?subject=Profile Inquiry">Email</a>
+        <a id="github" href="https://github.com/creechj" target="_blank"><img src="/assets/images/GitHub_Logo.png" alt=""></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/jordan-creech-a59236116/" target="_blank"><img src="/assets/images/LinkedIn-Blue.png" alt=""></a>
     </footer>
 </body>
 </html>
