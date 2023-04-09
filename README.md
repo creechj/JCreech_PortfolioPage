@@ -8,6 +8,8 @@ Resources:
 details element:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 
+flexbox:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 LinkedIn Logo Source:
 https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo
@@ -18,6 +20,9 @@ https://github.com/logos
 
 Email icon source:
 https://vectorified.com/images/email-icon-white-png-38.png
+
+Placeholder image:
+https://www.pngkey.com/png/detail/233-2332677_ega-png.png
 
 Colors:
 background: https://cssgradient.io/shades-of-blue/
