@@ -32,13 +32,19 @@ header h1 {
 }
 
 /* dark mode switch (checkbox for now) fix !!! */
-header label, header input {
+#darkmodelandi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     right: 0;
     top 0;
     position: absolute;
     font-size: .5em;
-    margin: .1em;
-    padding: .1em;
+}
+
+#darkmodelandi input {
+    margin: .2em;
+    height: .8em;
 }
 
 header nav {
