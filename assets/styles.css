@@ -1,6 +1,6 @@
 /* sets common font-family to page and sets general positioning and sizing attributes settings*/
 * {
-    font-family: Verdana, Tahoma, Helvetica;
+    font-family: Tahoma, Helvetica, Verdana;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +12,10 @@
 */
 header {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
     min-width: 100%;
-    background-color: darkslateblue;
+    background-color: #00538C;
     color: whitesmoke;
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
@@ -24,14 +24,18 @@ header {
 
 
 header h1 {
-    font-size: 2em;
-    flex: 2 20em;
-    margin-right: 2em;
-    text-shadow: .1em .1em .8em #28282B;
+    font-size: 1em;
+    /* flex: 2 20em; */
+    margin-right: 1em;
+    margin-left: .25em;
+    text-shadow: .1em .1em .1em #28282B;
 }
 
 header nav {
-    font-size: 1em;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
+    font-size: .5em;
     align-items: flex-end;
     margin-top: .25em;    
     margin-bottom: .25em;    
@@ -40,6 +44,8 @@ header nav {
 }
 
 header ul {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     list-style: none;
 }
@@ -53,7 +59,7 @@ header a {
     display: block;
     width: 100%;
     text-decoration: none;
-    text-shadow: .05em 0em .1em darkslateblue;
+    color: #28282B;
     text-align: center;
     color: #28282B;
     padding: .2em;
@@ -73,56 +79,66 @@ header a {
     margin-left: .25em;
     margin-right: .25em;
     margin-bottom: .5em;
-    align-items: center;
+    /* align-items: center; */
+    /* font-size: 1em; */
 }
 
-#aboutme figure {
+/* #aboutme figure {
     margin-top: .5em;
     margin-left: .25em;
     margin-right: .25em;    
-}
+} */
 
 #aboutme h2 {
     margin-left: .25em;
     margin-right: .25em;
     top: 0;
     left: 0;
+    text-shadow: .05em 0em .05em #28282B;
 }
 
 #aboutme p {
-    /* max-width: 50em; */
-
+    /* max-width: 60em; */
+    font-size: .8em;
+    margin-right: 1em;
+    margin-top: .5em;
 }
 
 #profilepic {
     height: 8em;
     width: 8em;
     float: left;
-    margin: .5em;
+    margin-top: .5em;
+    margin-right: 1em;
+    box-shadow: .05em .05em .05em #00538C;
+    border-radius: 5%;
 }
 
 footer {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
     min-width: 100%;
-    background-color: darkslateblue;
+    height: 1.5em;
+    bottom: 0;
+    background-color: #00538C;
     color: whitesmoke;
-    align-items: center;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    margin-top: 2em;
 }
 
-footer h4 {
-    position: relative;
-    font-size: 1.5em;
-    flex: 2 20em;
-    margin-right: 2em;
-    text-shadow: .1em .1em .1em #28282B;
+#contactlinks {
+    width: 100%;
+    margin-left: 50%;
+    margin-right: 50%;
+    /* margin-right: .5em; */
 }
 
 footer a, footer img {
-    width: 5em;
+    width: 1em;
 }
 
+#linkedin img {
+    padding-bottom: .15em;
+}
 
 /* main colors */
     /* background-color: #28282B;

@@ -16,8 +16,11 @@ https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo
 GitHub Logo Source:
 https://github.com/logos
 
+Email icon source:
+https://vectorified.com/images/email-icon-white-png-38.png
+
 Colors:
-background: https://louisem.com/436022/black-hex-codes
+background: https://cssgradient.io/shades-of-blue/
 
 nav:
 https://www.w3schools.com/csS/css_navbar_horizontal.asp
