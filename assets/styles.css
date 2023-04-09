@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* !!! Header !!! */
 
 /* set header area should stretch width of page and flex in 2 parts: heading and nav
     the 2 should always appear side-by-side
@@ -103,6 +104,8 @@ header a:hover {
     background-color: whitesmoke;
 }
 
+/* !!! Main !!! */
+
 /* provides margins for main sections and applies flexbox to main container */
 main {
     margin-left: 15%;
@@ -135,6 +138,7 @@ main {
     font-size: .8em;
     /* margin-right: 1em; */
     margin-top: .5em;
+    color: #28282B;
 }
 
 /* set profile picture size and set float to allow text wrap */
@@ -148,20 +152,32 @@ main {
     border-radius: 5%;
 }
 
-/* initialize flexbox - attributes will be adj. !!! */
+/* flexbox for project figures */
 #projects {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: .25em;
+    /* justify-content: center;
+    align-items:flex-start; */
+}
+
+#projects figure {
+    padding: .01em;
+    flex: 50%;
+    max-width: 50%;
+    border-style: dashed;
+    border-width: .005em;
+    border-color: #00538C;
+}
+
+#projects img {
+    width: 100%;
+    vertical-align: middle;
 }
 
 #projects h2 {
-    /* margin-left: .25em; */
     margin-right: .25em;
-    margin-bottom: .25em;
+    margin-bottom: .5em;
     font-size: 1.25em;
     width: 100%;
     top: 0;
@@ -180,12 +196,7 @@ main {
     font-size: .5em;
 }
 
-/* initial image for sizing !!! */
-#projects img {
-    width: 8em;
-    height: 8em;
-}
-
+/* !!! Footer !!! */
 
 /* size footer across page
     set vertical width
