@@ -11,6 +11,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 flexbox:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items
 
 LinkedIn Logo Source:
 https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo
