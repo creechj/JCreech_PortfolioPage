@@ -13,7 +13,7 @@ A menu is provided at the top that navigates to the respective section of the pa
 Project images are displayed in the main content area of the page and can be clicked to follow links to each deployed project.  
 Image captions can be expanded for text elaborating on the details of each.
 
-The site can be viewed at: !!! Add deployed link !!!
+The site can be viewed at: https://creechj.github.io/JCreech_PortfolioPage/
 
 ![Screenshot of Jordan's Portfolio Page](assets/images/JCreech_Portfolio_Screenshot.png)
 
