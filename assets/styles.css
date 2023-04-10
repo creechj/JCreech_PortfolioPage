@@ -8,27 +8,24 @@
 
 /* !!! Header !!! */
 
-/* set header area should stretch width of page and flex in 2 parts: heading and nav
-    the 2 should always appear side-by-side
-    heading should always appear larger than nav
-*/
+/* set header area should stretch width of page and flex in 2 parts: heading and nav */
 header {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-between;
     min-width: 100%;
+    padding-bottom: .5em;
     background-color: #00538C;
     color: whitesmoke;
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
-    /* border-bottom-style; */
 }
 
 /* aligning page title and applying font size and shadow
 */
 header h1 {
     font-size: 5vh;
-    margin-right: 15%;
+    margin-right: 10%;
     margin-left: 15%;
     text-shadow: .1em .1em .1em #28282B;
 }
@@ -55,28 +52,23 @@ header h1 {
 /* sizes and positions nav menu */
 header nav {
     width: 100%;
-    font-size: 1.75vh;
+    font-size: 3vh;
     margin-top: .25em;    
     margin-bottom: .25em;    
-    margin-right: 1.25em;
-    margin-left: .1em;
-    padding: .2em;
+    padding-left: 15%;
 }
 
 /* applies flexbox to nav menu buttons, aligns menu relative to page title */
 header ul {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-right: 15%;
-    margin-left: 15%;
+    width: 75%;
     list-style: none;
 }
 
-/* sizes nav menu buttons */
+/* divides nav menu by 6 for button sizes */
 header li {
-    width: 10em;
-    /* padding: .1em; */
+    min-width: 16.67%;
 }
 
 /* formats nav links as buttons
@@ -104,6 +96,18 @@ header a:hover {
     background-color: whitesmoke;
 }
 
+/* flexes nav menu at 915px breakpoint (MS Surface 7) */
+@media screen and (max-width: 915px) {
+    header ul {
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+    header li {
+        flex: 50%;
+    }    
+}
+
 /* !!! Main !!! */
 
 /* provides margins for main sections and applies flexbox to main container */
@@ -117,16 +121,17 @@ main {
 /* sizing, formatting, and alignment of About Me section */
 #aboutme {
     margin-top: .5em;
-    margin-left: .25em;
-    margin-right: .25em;
+    /* margin-left: .25em;
+    margin-right: .25em; */
     margin-bottom: .5em;
-    font-size: .75em;
+    font-size: 3vh;
 }
 
 /* positions About Me heading at top left of container and formats text */
 #aboutme h2 {
-    margin-left: .25em;
-    margin-right: .25em;
+    /* margin-left: 15%; */
+    /* margin-right: .25em; */
+    font-size: 7vh;
     top: 0;
     left: 0;
     color: #28282B;
@@ -168,19 +173,22 @@ main {
     border-style: dashed;
     border-width: .005em;
     border-color: #00538C;
+    background-color: #00538C;
 }
-
-
 
 #projects img {
     width: 100%;
     vertical-align: middle;
 }
 
+#projects img:hover {
+    opacity: .5;
+}
+
 #projects h2 {
     margin-right: .25em;
     margin-bottom: .5em;
-    font-size: 1.25em;
+    font-size: 7vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -189,12 +197,14 @@ main {
 }
 
 #projects summary {
+    background-color: whitesmoke;
     color: #28282B;
     text-shadow: .05em 0em .05em #00538C;
     font-size: .75em;
 }
 
 #projects details p {
+    background-color: whitesmoke;
     font-size: .5em;
 }
 
@@ -231,4 +241,5 @@ footer img {
 /* center link icons accounting for internal image spacing */
 #linkedin img {
     margin-bottom: .15em;
+    margin-left: .1em;
 }
