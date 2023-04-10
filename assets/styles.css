@@ -1,4 +1,4 @@
-/* sets common font-family to page and sets general positioning and sizing attributes settings*/
+/* sets common font-family to page and sets general positioning and sizing attributes*/
 * {
     font-family: Tahoma, Helvetica, Verdana;
     margin: 0;
@@ -8,7 +8,7 @@
 
 /* !!! Header !!! */
 
-/* set header area should stretch width of page and flex in 2 parts: heading and nav */
+/* set header area to stretch width of page and flex in 2 parts: heading and nav */
 header {
     display: flex;
     flex-direction: column;
@@ -21,8 +21,7 @@ header {
     border-bottom-right-radius: 2%;
 }
 
-/* aligning page title and applying font size and shadow
-*/
+/* aligning page title and applying font size and shadow */
 header h1 {
     font-size: 5vh;
     margin-right: 10%;
@@ -30,7 +29,7 @@ header h1 {
     text-shadow: .1em .1em .1em #28282B;
 }
 
-/* dark mode switch (checkbox for now) - coming soon */
+/* dark mode switch (unused currently)*/
 #darkmodelandi {
     display: none;
     /* display: flex; */
@@ -90,7 +89,7 @@ header a {
     background-color: #00538C;
 }
 
-/* adds hover effect to nav menu buttons */
+/* hover effect for nav menu buttons */
 header a:hover {
     Color: #28282B;
     background-color: whitesmoke;
@@ -110,7 +109,8 @@ header a:hover {
 
 /* !!! Main !!! */
 
-/* provides margins for main sections and applies flexbox to main container */
+/* provides margins for main sections and applies flexbox to main container
+ forcing vertical alignment of sections */
 main {
     margin-left: 15%;
     margin-right: 15%;
@@ -121,16 +121,12 @@ main {
 /* sizing, formatting, and alignment of About Me section */
 #aboutme {
     margin-top: .5em;
-    /* margin-left: .25em;
-    margin-right: .25em; */
     margin-bottom: .5em;
     font-size: 3vh;
 }
 
 /* positions About Me heading at top left of container and formats text */
 #aboutme h2 {
-    /* margin-left: 15%; */
-    /* margin-right: .25em; */
     font-size: 7vh;
     top: 0;
     left: 0;
@@ -138,10 +134,9 @@ main {
     text-shadow: .05em 0em .05em #00538C;
 }
 
-/*  */
+/* formatting for About Me text */
 #aboutme p {
     font-size: .8em;
-    /* margin-right: 1em; */
     margin-top: .5em;
     color: #28282B;
 }
@@ -161,22 +156,21 @@ main {
 #projects {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    /* justify-content:space-between; */
     align-items:center;
 }
 
+/* formats Project figures, applies background for hover effect, 
+flexes images to half the width of first image (when combined with next block) */
 #projects figure {
     flex: 0 1 50%;
     padding: .01em;
-    /* flex: 50%;
-    max-width: 50%; */
     border-style: dashed;
     border-width: .005em;
     border-color: #00538C;
     background-color: #00538C;
 }
 
+/* make first image size larger than others in flexbox (per site requirements) */
 #projects #semantics {
     flex: 0 1 100%;
     height: 50%;
@@ -187,10 +181,12 @@ main {
     vertical-align: middle;
 }
 
+/* allows partail background visibility on hover for highlight effect  */
 #projects img:hover {
     opacity: .5;
 }
 
+/* formats Projects heading and positions above the content */
 #projects h2 {
     margin-right: .25em;
     margin-bottom: .5em;
@@ -202,6 +198,7 @@ main {
     text-shadow: .05em 0em .05em #00538C;
 }
 
+/* formatting for fig caption contents, applies background to override image backgroun */
 #projects summary {
     background-color: whitesmoke;
     color: #28282B;
