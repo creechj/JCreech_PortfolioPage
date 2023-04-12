@@ -22,8 +22,8 @@ header {
 }
 
 /* aligning page title and applying font size and shadow */
-header h1 {
-    font-size: 5vh;
+header > h1 {
+    font-size: 4.25vh;
     margin-right: 10%;
     margin-left: 15%;
     text-shadow: .1em .1em .1em #28282B;
@@ -50,11 +50,11 @@ header h1 {
 
 /* sizes and positions nav menu */
 header nav {
-    width: 100%;
+    /* width: 100%; */
     font-size: 3vh;
     margin-top: .25em;    
     margin-bottom: .25em;    
-    padding-left: 15%;
+    margin-left: 15%;
 }
 
 /* applies flexbox to nav menu buttons, aligns menu relative to page title */
@@ -67,7 +67,7 @@ header ul {
 
 /* divides nav menu by 6 for button sizes */
 header li {
-    min-width: 16.67%;
+    min-width: 20%;
 }
 
 /* formats nav links as buttons
@@ -79,7 +79,7 @@ header a {
     text-decoration: none;
     color: #28282B;
     text-align: center;
-    font-weight: 600;
+    font-weight: 450;
     color: whitesmoke;
     padding: .2em;
     border-radius: 2.5%;
@@ -156,18 +156,23 @@ main {
 #projects {
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
 }
 
 /* formats Project figures, applies background for hover effect, 
 flexes images to half the width of first image (when combined with next block) */
 #projects figure {
-    flex: 0 1 50%;
-    padding: .01em;
+    flex: 0 1 48%;
+    /* padding: -2%; */
     border-style: dashed;
     border-width: .005em;
     border-color: #00538C;
     background-color: #00538C;
+    margin: 1%;
+}
+
+.projectlink {
+    width: 100%;
 }
 
 /* make first image size larger than others in flexbox (per site requirements) */
@@ -176,7 +181,7 @@ flexes images to half the width of first image (when combined with next block) *
     height: 50%;
 }
 
-#projects img {
+.projectimage {
     width: 100%;
     vertical-align: middle;
 }
