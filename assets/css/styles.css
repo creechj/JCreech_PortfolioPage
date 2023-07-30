@@ -1,253 +1,59 @@
-/* sets common font-family to page and sets general positioning and sizing attributes*/
-* {
-    font-family: Tahoma, Helvetica, Verdana;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* !!! Header !!! */
-
-/* set header area to stretch width of page and flex in 2 parts: heading and nav */
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 100%;
-    padding-bottom: .5em;
-    background-color: #00538C;
+/* header */
+.navbar-brand h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 564px;
+    /* font-size: 6vh; */
+    padding-left: 2%;
     color: whitesmoke;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
+    text-shadow: 2px 3px black;
 }
 
-/* aligning page title and applying font size and shadow */
-header > h1 {
-    font-size: 4.25vh;
-    margin-right: 10%;
-    margin-left: 15%;
-    text-shadow: .1em .1em .1em #28282B;
+.navbar-brand:hover {
+    opacity: 20%;
 }
 
-/* dark mode switch (unused currently)*/
-#darkmodelandi {
-    display: none;
-    /* display: flex; */
-    flex-direction: row;
-    align-items: center;
-    right: 0;
-    top: 0;
-    position: absolute;
-    font-size: .5em;
-    margin-right: 10%;
+.navbar-nav {
+    /* padding-left: 75%; */
 }
 
-/* spacing label apart from input (checkbox) */
-#darkmodelandi input {
-    margin: .2em;
-    height: .8em;
+.nav-link img {
+    height: 40px;
+    width: 40px;
 }
 
-/* sizes and positions nav menu */
-header nav {
-    /* width: 100%; */
-    font-size: 3vh;
-    margin-top: .25em;    
-    margin-bottom: .25em;    
-    margin-left: 15%;
+.nav-link img:hover {
+    opacity: 20%;
 }
 
-/* applies flexbox to nav menu buttons, aligns menu relative to page title */
-header ul {
-    display: flex;
-    flex-direction: row;
-    width: 75%;
-    list-style: none;
-}
-
-/* divides nav menu by 6 for button sizes */
-header li {
-    min-width: 20%;
-}
-
-/* formats nav links as buttons
-horizontally aligns menu under title 
-*/
-header a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: #28282B;
-    text-align: center;
-    font-weight: 450;
-    color: whitesmoke;
-    padding: .2em;
-    border-radius: 2.5%;
-    border-style: solid;
-    border-color: whitesmoke;
-    border-width: .05em;
-    background-color: #00538C;
-}
-
-/* hover effect for nav menu buttons */
-header a:hover {
-    Color: #28282B;
-    background-color: whitesmoke;
-}
-
-/* flexes nav menu at 915px breakpoint (MS Surface 7) */
-@media screen and (max-width: 915px) {
-    header ul {
-        display: flex;
-        flex-direction: unset;
-        flex-wrap: wrap;
-    }
-    header li {
-        flex: 50%;
-    }    
-}
-
-/* !!! Main !!! */
-
-/* provides margins for main sections and applies flexbox to main container
- forcing vertical alignment of sections */
+/* main */
 main {
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-direction: column;
+    padding: 0px 10px 0 10px;
 }
 
-/* sizing, formatting, and alignment of About Me section */
-#aboutme {
-    margin-top: .5em;
-    margin-bottom: .5em;
-    font-size: 3vh;
-}
-
-/* positions About Me heading at top left of container and formats text */
-#aboutme h2 {
-    font-size: 7vh;
-    top: 0;
-    left: 0;
-    color: #28282B;
-    text-shadow: .05em 0em .05em #00538C;
-}
-
-/* formatting for About Me text */
-#aboutme p {
-    font-size: .8em;
-    margin-top: .5em;
-    color: #28282B;
-}
-
-/* set profile picture size and set float to allow text wrap */
-#profilepic {
-    height: 8em;
-    width: 8em;
-    float: left;
-    margin-top: .5em;
-    margin-right: 1em;
-    box-shadow: .05em .05em .05em #00538C;
-    border-radius: 5%;
-}
-
-/* flexbox for project figures */
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-/* formats Project figures, applies background for hover effect, 
-flexes images to half the width of first image (when combined with next block) */
-#projects figure {
-    flex: 0 1 48%;
-    /* padding: -2%; */
-    border-style: dashed;
-    border-width: .005em;
-    border-color: #00538C;
-    background-color: #00538C;
-    margin: 1%;
-}
-
-.projectlink {
+/* projects */
+.project {
     width: 100%;
 }
 
-/* make first image size larger than others in flexbox (per site requirements) */
-#projects #semantics {
-    flex: 0 1 100%;
-    height: 50%;
+.project img:hover {
+    opacity: 75%;
 }
 
-.projectimage {
-    width: 100%;
-    vertical-align: middle;
+/* header responsiveness */
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        padding-left: 70%;
+    }
+    .navbar-nav li {
+        padding-left: 81.5%;
+    }
 }
 
-/* allows partail background visibility on hover for highlight effect  */
-#projects img:hover {
-    opacity: .5;
-}
-
-/* formats Projects heading and positions above the content */
-#projects h2 {
-    margin-right: .25em;
-    margin-bottom: .5em;
-    font-size: 7vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    color: #28282B;
-    text-shadow: .05em 0em .05em #00538C;
-}
-
-/* formatting for fig caption contents, applies background to override image backgroun */
-#projects summary {
-    background-color: whitesmoke;
-    color: #28282B;
-    text-shadow: .05em 0em .05em #00538C;
-    font-size: 3vh;
-}
-
-#projects details p {
-    background-color: whitesmoke;
-    font-size: 2vh;
-}
-
-/* !!! Footer !!! */
-
-/* size footer across page
-    set vertical width
-    attach to bottom of page
-    apply page them (color/background)
-*/
-footer {
-    width: 100%;
-    height: 7.5vh;
-    position: relative;
-    bottom: 0;
-    background-color: #00538C;
-    color: whitesmoke;
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
-    margin-top: 2em;
-}
-
-/* horizontally center link icons within footer*/
-#contactlinks {
-    text-align: center;
-}
-
-/* size link icons and vertically center within footer */
-footer img {
-    width: 5vh;
-    margin-top: 1vh;
-}
-
-/* center link icons accounting for internal image spacing */
-#linkedin img {
-    margin-bottom: .5vh;
-    margin-left: .3vh;
+@media screen and (max-width: 674px) {
+    .navbar-nav {
+        padding-left: unset;
+    }
+    .navbar-nav li {
+        padding-left: .5%;
+    }
 }
