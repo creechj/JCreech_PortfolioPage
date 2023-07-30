@@ -35,6 +35,10 @@ main {
     width: 100%;
 }
 
+.project img:hover {
+    opacity: 75%;
+}
+
 /* header responsiveness */
 @media screen and (max-width: 991px) {
     .navbar-nav {
