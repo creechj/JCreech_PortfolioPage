@@ -18,7 +18,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
-            >Jordan Creech: Full-Stack Portfolio</a
+            ><h1>Jordan Creech: Full-Stack Portfolio</h1></a
           >
           <button
             class="navbar-toggler"
@@ -31,7 +31,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a title="Home" class="nav-link" aria-current="page" href="#"
@@ -145,24 +145,25 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class=".container-fluid row">
       <!-- About Me section with profile picture and bio paragraph -->
-      <section id="aboutme">
+      <section id="aboutme" class="col-lg-6 col-md-12">
         <h2>About Me</h2>
-        <figure id="profilepicfig">
+        <figure id="profilepicfig" class="col">
           <!-- image linked to GitHub profile picture -->
           <img
             id="profilepic"
+            class="img-fluid rounded mx-auto d-block"
             src="https://avatars.githubusercontent.com/u/127697449?v=4"
             alt="Profile picture of site owner: Jordan Creech"
           />
         </figure>
-        <p id="profileinfo">
+        <p id="profileinfo" class="col">
           A 10-year veteran of manufacturing finance, I've held roles in various
           areas including: Cost Accounting, Operations Finance, and FP&A. My
           formal education includes a bachelors spanning Accounting and
           Information Systems, and an entrepreneurial MBA. I've coordinated ERP
-          integrations, reporting software implementations, and numerous
+          integrations, reporting software implementations, and numerous adhoc
           projects, serving as a translator between business needs, and
           technical capabilities and constraints. My interests have always
           skewed toward the technical, leading to the pursuit of a Full-Stack
@@ -170,84 +171,121 @@
           building.
         </p>
       </section>
-      <section id="projects">
+      <section id="projects" class="col-lg-6">
         <h2>Projects</h2>
-        <figure class="project" id="semantics">
+        <figure class="project">
+          <a href="https://project1team5-def011f76af0.herokuapp.com/" target="_blank"
+            ><img
+              class="projectimage img-fluid rounded mx-auto d-block"
+              src="assets/images/FueGoals_Screenshot.png"
+              alt="Image of project"
+          /></a>
+          <figcaption>
+            <details>
+              <summary>FueGoals</summary>
+              <p>
+                FueGoals is an exercise-logging web application built using several Node packages including express, sequelize (for MySql interface), bcrypt, and multer. The application has an AWS connection for storing user uploaded images and a 3rd party API for providing exercise selections. The front-end is built around handlebars.js (for express). User interaction with the site is heavily reliant on RESTful API calls and CRUD operations. This project was deployed as a bootcamp assignment and was built partnering with another bootcamp participant (see project README in GitHub repository for more details).
+              </p>
+            </details>
+          </figcaption>
+        </figure>
+        <figure class="project">
+          <a href="https://bootcampgroup1.github.io/Work_It_Off/index.html" target="_blank"
+            ><img
+              class="projectimage img-fluid rounded mx-auto d-block"
+              src="assets/images/WorkItOff_Screenshot.png"
+              alt="Image of project"
+          /></a>
+          <figcaption>
+            <details>
+              <summary>Work It Off</summary>
+              <p>
+                Work It Off allows users to compare the calorie total for a selected quantity of food or beverage against the calory total for a selected duration of activities. 2 3rd party API's are used (1 for each of the aforementioned selections). This project was deployed as a bootcamp assignment, primarily as a demonstration of JavaScript and jQuery aptitude, in partnership with 3 fellow bootcamp participants (see project README in GitHub repository for more details).
+            </p>
+            </details>
+          </figcaption>
+        </figure>
+        <figure class="project">
           <a href="https://creechj.github.io/01-Accessibility/" target="_blank"
             ><img
-              class="projectimage"
+              class="projectimage img-fluid rounded mx-auto d-block"
               src="assets/images/233-2332677_ega-png.png"
-              alt="Image of semantic accessibility project: Horiseon Homepage"
+              alt="Image of project"
           /></a>
           <figcaption>
             <details>
               <summary>Semantics</summary>
               <p>
-                Refactored a homepage for a social media consulting firm to
-                apply up-to-date semantic HTML and accessibility practices
+                Insert project details here
               </p>
             </details>
           </figcaption>
         </figure>
-        <figure class="project" id="css">
-          <a href="#css" target="_self" class="projectlink"
+        <figure class="project">
+          <a href="https://creechj.github.io/01-Accessibility/" target="_blank"
             ><img
-              class="projectimage"
+              class="projectimage img-fluid rounded mx-auto d-block"
               src="assets/images/233-2332677_ega-png.png"
-              alt="Image of cotton candy-themed webpage created as a class project"
+              alt="Image of project"
           /></a>
           <figcaption>
             <details>
-              <summary>CSS</summary>
+              <summary>Semantics</summary>
               <p>
-                Bootcamp group project demonstrating CSS color applications
-                (site link not deployed)
+                Insert project details here
               </p>
             </details>
           </figcaption>
         </figure>
-        <figure class="project" id="javascript">
-          <a href="#javascript" target="_self" class="projectlink"
+        <figure class="project">
+          <a href="https://creechj.github.io/01-Accessibility/" target="_blank"
             ><img
-              class="projectimage"
+              class="projectimage img-fluid rounded mx-auto d-block"
               src="assets/images/233-2332677_ega-png.png"
-              alt="Image coming soon"
+              alt="Image of project"
           /></a>
           <figcaption>
             <details>
-              <summary>Javascript</summary>
-              <p>Coming soon. Please check back later.</p>
+              <summary>Semantics</summary>
+              <p>
+                Insert project details here
+              </p>
             </details>
           </figcaption>
         </figure>
-        <figure class="project" id="databases">
-          <a href="#databases" target="_self" class="projectlink"
+        <figure class="project">
+          <a href="https://creechj.github.io/01-Accessibility/" target="_blank"
             ><img
-              class="projectimage"
+              class="projectimage img-fluid rounded mx-auto d-block"
               src="assets/images/233-2332677_ega-png.png"
-              alt="Image coming soon"
+              alt="Image of project"
           /></a>
           <figcaption>
             <details>
-              <summary>Database</summary>
-              <p>Coming soon. Please check back later.</p>
+              <summary>Semantics</summary>
+              <p>
+                Insert project details here
+              </p>
             </details>
           </figcaption>
         </figure>
-        <figure class="project" id="pwa">
-          <a href="#pwa" target="_self" class="projectlink"
+        <figure class="project">
+          <a href="https://creechj.github.io/01-Accessibility/" target="_blank"
             ><img
-              class="projectimage"
+              class="projectimage img-fluid rounded mx-auto d-block"
               src="assets/images/233-2332677_ega-png.png"
-              alt="Image coming soon"
+              alt="Image of project"
           /></a>
           <figcaption>
             <details>
-              <summary>Progressive Web Apps</summary>
-              <p>Coming soon. Please check back later.</p>
+              <summary>Semantics</summary>
+              <p>
+                Insert project details here
+              </p>
             </details>
           </figcaption>
         </figure>
+        
       </section>
     </main>
     <!-- start footer -->
