@@ -12,9 +12,6 @@
     opacity: 20%;
 }
 
-.navbar-nav {
-    /* padding-left: 75%; */
-}
 
 .nav-link img {
     height: 40px;
@@ -23,6 +20,7 @@
 
 .nav-link img:hover {
     opacity: 20%;
+    cursor: pointer;
 }
 
 /* main */
